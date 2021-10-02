@@ -5,7 +5,7 @@
 > [Website](https://www.ordisoftware.com/projects/hieroglyphics-decoder)<br/>
 > [Twitter](https://twitter.com/ordisoftware)<br/>
 
-A libre and open-source software written in C# that helps for the hieroglyph-by-hieroglyph rebus study and analysis of shenous or cartouches and frescoes of ancient Egypt.
+A libre and open-source software written in C# that helps for the hieroglyph-by-hieroglyph study and analysis of shenus or cartouches and frescoes of ancient Egypt.
 
 ## Table of content
 
