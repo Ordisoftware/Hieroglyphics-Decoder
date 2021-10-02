@@ -7,8 +7,8 @@
 
 [Setup]
 AppCopyright=Copyright 2012-2021 Olivier Rogier
-AppId={{}
-;AppMutex=
+AppId={{6274AC04-C535-4174-A934-15F84A148181}
+;AppMutex=a9dd30d9-bcf7-417c-9889-0cc0025d77f2
 #include "Scripts\Setup.iss"
 
 [Languages]
