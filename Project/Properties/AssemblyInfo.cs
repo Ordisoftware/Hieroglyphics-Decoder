@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // l'ensemble d'attributs suivant. Changez les valeurs de ces attributs pour modifier les informations
 // associées à un assembly.
 [assembly: AssemblyTitle("Hieroglyphics Decoder")]
-[assembly: AssemblyDescription("Hieroglyph-by-hieroglyph rebus study and analysis of shenous")]
+[assembly: AssemblyDescription("Rebus hieroglyph-by-hieroglyph analyzer for ancient Egyptian shenus")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Ordisoftware")]
 [assembly: AssemblyProduct("www.ordisoftware.com/projects/hebrew-letters")]
