@@ -222,10 +222,22 @@
     <Compile Include="Source\Common\Core\WinForms.Controls\ComboBoxNavigator.Designer.cs">
       <DependentUpon>ComboBoxNavigator.cs</DependentUpon>
     </Compile>
+    <Compile Include="Source\Common\Core\WinForms.Controls\CommonMenusControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\Common\Core\WinForms.Controls\CommonMenusControl.Designer.cs">
+      <DependentUpon>CommonMenusControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Source\Common\Core\WinForms.Controls\ControlLocation.cs" />
     <Compile Include="Source\Common\Core\WinForms.Controls\FormsHelper.cs" />
     <Compile Include="Source\Common\Core\WinForms.Controls\RichTextBoxEx.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Source\Common\Core\WinForms.Controls\SelectYearsControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Source\Common\Core\WinForms.Controls\SelectYearsControl.designer.cs">
+      <DependentUpon>SelectYearsControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Source\Common\Core\WinForms.Controls\TextBoxEx.Actions.cs">
       <SubType>Component</SubType>
@@ -321,6 +333,15 @@
     </Compile>
     <EmbeddedResource Include="Source\Common\Core\WinForms.Controls\ComboBoxNavigator.resx">
       <DependentUpon>ComboBoxNavigator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Common\Core\WinForms.Controls\CommonMenusControl.fr.resx">
+      <DependentUpon>CommonMenusControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Common\Core\WinForms.Controls\CommonMenusControl.resx">
+      <DependentUpon>CommonMenusControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Source\Common\Core\WinForms.Controls\SelectYearsControl.resx">
+      <DependentUpon>SelectYearsControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Source\Common\Core\WinForms.Controls\TextBoxEx.fr.resx">
       <DependentUpon>TextBoxEx.cs</DependentUpon>
