@@ -35,8 +35,8 @@ A libre and open-source software written in C# that helps for the rebus hierogly
 
 - Screen 1024x768 or higher
 - Windows 7 SP1 x32/x64 or higher
-- Framework .NET 4.7.2
-- SQLite 3.33
+- Framework .NET 4.8
+- SQLite 3.35.5
 
 ## Download
 
