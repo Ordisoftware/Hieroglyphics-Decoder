@@ -20,7 +20,6 @@ AppId={{6274AC04-C535-4174-A934-15F84A148181}
 [Tasks]
 #include "Scripts\Tasks.iss"
 
-
 [Dirs]
 
 [InstallDelete]
@@ -32,9 +31,7 @@ AppId={{6274AC04-C535-4174-A934-15F84A148181}
 [Icons]
 #include "Scripts\Icons.iss"
 
-
 [Registry]
-
 
 [Run]
 #include "Scripts\Run.iss"
