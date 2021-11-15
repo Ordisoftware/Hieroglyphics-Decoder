@@ -1,4 +1,4 @@
-﻿namespace Hieroglyphics_Decoder
+﻿namespace Ordisoftware.Hieroglyphics.Decoder
 {
   partial class MainForm
   {
