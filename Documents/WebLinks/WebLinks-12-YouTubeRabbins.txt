@@ -10,8 +10,10 @@
 ; Use the "-" char at the beginning of a line to insert a separator
 ; --------------------------------------------------------------------------------------------------
 
-Lang/EN = Video Channels
-Lang/FR = Vidéo Chaînes
+FOLDER-SEPARATOR
+
+Lang/EN = YouTube Rabbis
+Lang/FR = YouTube Rabbins
 
 Name = (FR) Rav Menahem Altabe
 URL = https://www.youtube.com/channel/UCdAlxrOJveWBAcyOkilTqeQ
@@ -51,6 +53,9 @@ URL = https://www.youtube.com/channel/UCDIGQLzR9CylDHD00XU9LRw
 Name = (FR) Sitré Haïm (Rav Yossef Hay)
 URL = https://www.youtube.com/channel/UCKU1dFq807Wjnp75ItK0lDg
 
+Name = (EN) The Yeshiva (Rabbi YY Jacobson)
+URL = https://www.youtube.com/user/TheYeshivaNet
+
 -
 
 Name = (FR) Hevrat Pinto (Rav David Pinto)
@@ -61,63 +66,6 @@ URL = https://www.youtube.com/channel/UC2dAMNXEjoaU8HrP2CGaFMQ
 
 Name = (IW) Hevrat Pinto (Rav David Pinto)
 URL = https://www.youtube.com/channel/UCF3zPVhQgqqwktX11Nt-27A
-
--
-
-Name = (FR) 613 TV
-URL = https://www.youtube.com/channel/UC0iLLG9ha8yShk7BPXvDXJw
-
-Name = (FR) Beit Ha-Zohar 
-URL = https://www.youtube.com/channel/UCcy6coS9yFqYlcxxNYkgWvQ
-
-Name = (FR) Chiourim.com
-URL = https://www.youtube.com/channel/UCGtRAjg1uXlrRB5f6qDKFHg
-
-Name = (FR) Espace Torah
-URL = https://www.youtube.com/channel/UCS3TXWo_jE-_hzG5tCzfTkA
-
-Name = (FR) Hidabroot
-URL = https://www.youtube.com/channel/UCJtbh90uFEE6mrPtxi8SMLg
-
-Name = (FR) Israël Torah
-URL = https://www.youtube.com/channel/UCo2YNHOaw9qMfPM4V4ha2dg
-
-Name = (FR) Judaïsme En Mouvement
-URL = https://www.youtube.com/channel/UC4OMlfV7DUiQhZDbCYdFyEQ
-
-Name = (FR) Torah Box
-URL = https://www.youtube.com/channel/UCNgEEqkr9UeSqxJAHxe6-KA
-
-Name = (FR) Torah Times
-URL = https://www.youtube.com/user/laparacha
-
-Name = (FR) Tsarfat
-URL = https://www.youtube.com/channel/UC1GkeNRskJahD-H5qf0cACw
-
--
-
-Name = (FR) Aish
-URL = https://www.youtube.com/user/AishFr
-
-Name = (EN) Aish
-URL = https://www.youtube.com/user/AishVideo
-
-Name = (IW) Aish
-URL = https://www.youtube.com/user/AishIvrit
-
--
-
-Name = (EN) My Jewish Learning 
-URL = https://www.youtube.com/user/myjewishlearning
-
-Name = (EN) The Yeshiva
-URL = https://www.youtube.com/user/TheYeshivaNet
-
-Name = (EN) Torah Anytime
-URL = https://www.youtube.com/user/torahanytime1
-
-Name = (EN) Torah Jews
-URL = https://www.youtube.com/torahjews
 
 -
 
