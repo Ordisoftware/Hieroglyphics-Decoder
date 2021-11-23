@@ -19,6 +19,23 @@ using System.Windows.Forms;
 public partial class MainForm : Form
 {
 
+  #region Singleton
+
+  /// <summary>
+  /// Indicates the singleton instance.
+  /// </summary>
+  static internal MainForm Instance { get; private set; }
+
+  /// <summary>
+  /// Static constructor.
+  /// </summary>
+  static MainForm()
+  {
+    Instance = new MainForm();
+  }
+
+  #endregion
+
   public MainForm()
   {
     InitializeComponent();
