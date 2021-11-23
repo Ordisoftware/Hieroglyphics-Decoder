@@ -14,8 +14,6 @@
 /// <edited> 2021-10 </edited>
 namespace Ordisoftware.Hieroglyphics.Decoder;
 
-using System.Windows.Forms;
-
 public partial class MainForm : Form
 {
 
