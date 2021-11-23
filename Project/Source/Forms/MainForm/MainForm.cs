@@ -12,23 +12,16 @@
 /// </license>
 /// <created> 2021-10 </created>
 /// <edited> 2021-10 </edited>
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+namespace Ordisoftware.Hieroglyphics.Decoder;
+
 using System.Windows.Forms;
 
-namespace Ordisoftware.Hieroglyphics.Decoder
+public partial class MainForm : Form
 {
-  public partial class MainForm : Form
+
+  public MainForm()
   {
-    public MainForm()
-    {
-      InitializeComponent();
-    }
+    InitializeComponent();
   }
+
 }

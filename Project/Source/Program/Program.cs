@@ -12,30 +12,23 @@
 /// </license>
 /// <created> 2021-10 </created>
 /// <edited> 2021-10 </edited>
-using System;
-using System.ComponentModel;
-using System.Globalization;
-using System.IO;
-using System.IO.Pipes;
-using System.Runtime.Serialization.Formatters.Binary;
-using System.Threading;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using Ordisoftware.Core;
+namespace Ordisoftware.Hieroglyphics.Decoder;
 
-namespace Ordisoftware.Hieroglyphics.Decoder
+using System;
+using System.Windows.Forms;
+
+static class Program
 {
-  static class Program
+
+  /// <summary>
+  /// Point d'entrée principal de l'application.
+  /// </summary>
+  [STAThread]
+  static void Main()
   {
-    /// <summary>
-    /// Point d'entrée principal de l'application.
-    /// </summary>
-    [STAThread]
-    static void Main()
-    {
-      Application.EnableVisualStyles();
-      Application.SetCompatibleTextRenderingDefault(false);
-      Application.Run(new MainForm());
-    }
+    Application.EnableVisualStyles();
+    Application.SetCompatibleTextRenderingDefault(false);
+    Application.Run(new MainForm());
   }
+
 }
