@@ -1,8 +1,6 @@
 ﻿# Hieroglyphics Decoder
 
 [![GitHub](https://img.shields.io/github/license/ordisoftware/hieroglyphics-decoder)](#)&nbsp;
-[![GitHub all releases](https://img.shields.io/github/downloads/ordisoftware/hieroglyphics-decoder/total)](#)&nbsp;
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/ordisoftware/hieroglyphics-decoder)](#)&nbsp;
 [![GitHub repo size](https://img.shields.io/github/repo-size/ordisoftware/hieroglyphics-decoder)](#)&nbsp;
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ordisoftware/hieroglyphics-decoder)](#)&nbsp;
 [![Lines of code](https://img.shields.io/tokei/lines/github/ordisoftware/hieroglyphics-decoder)](#)&nbsp;
