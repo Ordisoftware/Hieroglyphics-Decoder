@@ -1,4 +1,4 @@
-﻿[![GitHub](https://img.shields.io/github/license/ordisoftware/hieroglyphics-decoder)](#)&nbsp;
+﻿[![License](https://img.shields.io/github/license/ordisoftware/hieroglyphics-decoder)](#)&nbsp;
 [![GitHub repo size](https://img.shields.io/github/repo-size/ordisoftware/hieroglyphics-decoder)](#)&nbsp;
 [![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ordisoftware/hieroglyphics-decoder)](#)&nbsp;
 [![Lines of code](https://img.shields.io/tokei/lines/github/ordisoftware/hieroglyphics-decoder)](#)&nbsp;<br/>
@@ -8,7 +8,7 @@
 [![Visual Studio](https://img.shields.io/badge/Visual%20Studio%202022-5C2D91.svg?label=ide)](#)&nbsp;
 [![C#](https://img.shields.io/badge/C%23%2010-%23239120.svg?label=lang)](#)&nbsp;
 [![SQLite](https://img.shields.io/badge/SQLite%203.35-%2307405e.svg?label=db)](#)&nbsp;<br/>
-[![Ordisoftware.com](https://img.shields.io/badge/-Ordisoftware.com-355F90?logo=WordPress&logoColor=white)](https://www.ordisoftware.com/hieroglyphics-decoder)&nbsp;
+[![Ordisoftware.com Project](https://img.shields.io/badge/-Ordisoftware.com%20Project-355F90?logo=WordPress&logoColor=white)](https://www.ordisoftware.com/hieroglyphics-decoder)&nbsp;
 [![Manufacturing Software Guidelines](https://img.shields.io/badge/-Manufacturing%20Software%20Guidelines-355F90?logo=MicrosoftWord&logoColor=white)](https://github.com/Ordisoftware/Guidelines)&nbsp;
 
 # Hieroglyphics Decoder
