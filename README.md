@@ -18,15 +18,10 @@ A libre and open-source software written in C# that helps for the rebus hierogly
 ## Table of content
 
 1. [Functionalities](#Functionalities)
-2. [Review](#Review)
-3. [Requirements](#Requirements)
-4. [Download](#Download)
-5. [Screenshots](#Screenshots)
-6. [Videos](#Videos)
-7. [Frequently asked questions](#Frequently-asked-questions)
-8. [Keyboard shortcuts](#Keyboard-shortcuts)
-9. [Future improvements](#Future-improvements)
-10. [Changelog](#Changelog)
+2. [Requirements](#Requirements)
+3. [Frequently asked questions](#Frequently-asked-questions)
+4. [Keyboard shortcuts](#Keyboard-shortcuts)
+5. [Changelog](#Changelog)
 
 ## Functionalities
 
@@ -37,8 +32,6 @@ A libre and open-source software written in C# that helps for the rebus hierogly
 - Copy the result or a screenshot to the clipboard.
 - English, French.
 
-## Review
-
 ## Requirements
 
 - Screen 1024x768 or higher
@@ -46,23 +39,11 @@ A libre and open-source software written in C# that helps for the rebus hierogly
 - Framework .NET 4.8
 - SQLite 3.35.5
 
-## Download
-
-**What's new in the latest version X.Y**
-
-[Last release](https://github.com/Ordisoftware/Hieroglyphics-Decoder/releases/latest)
-
-## Screenshots
-
-## Videos
-
 ## Frequently asked questions
 
 #### What to do if the check update tells that the SSL certificate is wrong or expired?
 
 The software verifies the validity of the certificate of the update server in addition to the SHA-512 checksum of the installation file before downloading and running it. This certificate is normally updated within the two months of its annual expiration and a new version is released. You can manually check the latest version available online in case of problem.
-
-#### What are command-line options?
 
 ## Keyboard shortcuts
 
@@ -84,8 +65,6 @@ The software verifies the validity of the certificate of the update server in ad
 | F11 | Usage statistics window |
 | F12 | About |
 | Alt + F4 (or Escape) | Exit application |
-
-## Future improvements
 
 ## Changelog
 
