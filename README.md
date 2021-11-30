@@ -17,11 +17,11 @@ A libre and open-source software written in C# that helps for the rebus hierogly
 
 ## Table of content
 
-1. [Functionalities](#Functionalities)
-2. [Requirements](#Requirements)
-3. [Frequently asked questions](#Frequently-asked-questions)
-4. [Keyboard shortcuts](#Keyboard-shortcuts)
-5. [Changelog](#Changelog)
+1. [Functionalities](#functionalities)
+2. [Requirements](#requirements)
+3. [Frequently asked questions](#frequently-asked-questions)
+4. [Keyboard shortcuts](#keyboard-shortcuts)
+5. [Changelog](#changelog)
 
 ## Functionalities
 
