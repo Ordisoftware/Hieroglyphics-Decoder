@@ -6,6 +6,8 @@
 #define MyAppURL "https://www.ordisoftware.com/projects/hieroglyphics-decoder"
 
 [Setup]
+MinVersion=0,6.1sp1
+LicenseFile=..\Project\Licenses\MPL 2.0.rtf
 AppCopyright=Copyright 2012-2022 Olivier Rogier
 AppId={{6274AC04-C535-4174-A934-15F84A148181}
 ;AppMutex=a9dd30d9-bcf7-417c-9889-0cc0025d77f2
@@ -13,12 +15,6 @@ AppId={{6274AC04-C535-4174-A934-15F84A148181}
 
 [Languages]
 #include "Scripts\Languages.iss"
-
-[CustomMessages]
-#include "Scripts\Messages.iss"
-
-[Tasks]
-#include "Scripts\Tasks.iss"
 
 [Dirs]
 
@@ -28,13 +24,19 @@ AppId={{6274AC04-C535-4174-A934-15F84A148181}
 [Files]
 #include "Scripts\Files.iss"
 
-[Icons]
-#include "Scripts\Icons.iss"
+[Run]
+#include "Scripts\Run.iss"
 
 [Registry]
 
-[Run]
-#include "Scripts\Run.iss"
+[Tasks]
+#include "Scripts\Tasks.iss"
+
+[Icons]
+#include "Scripts\Icons.iss"
+
+[CustomMessages]
+#include "Scripts\Messages.iss"
 
 [Code]
 #include "Scripts\CheckDotNetFramework.iss"
