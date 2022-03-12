@@ -28,6 +28,7 @@
     <Prefer32Bit>false</Prefer32Bit>
     <DocumentationFile>..\Bin\Debug\Ordisoftware.Hieroglyphics.Decoder.xml</DocumentationFile>
     <LangVersion>latest</LangVersion>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -42,6 +43,7 @@
     <DocumentationFile>..\Bin\Release\Ordisoftware.Hieroglyphics.Decoder.xml</DocumentationFile>
     <LangVersion>latest</LangVersion>
     <DebugSymbols>true</DebugSymbols>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CommandLine, Version=2.8.0.0, Culture=neutral, PublicKeyToken=5a870481e358d379, processorArchitecture=MSIL">
