@@ -41,7 +41,7 @@ A libre and open-source software written in C# that helps for the rebus hierogly
 
 ## Frequently asked questions
 
-#### What code analyzers are used?
+#### What code analyzers are used in addition to Visual Studio?
 
 - [SonarLint](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2022)
 - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2022)
@@ -49,8 +49,9 @@ A libre and open-source software written in C# that helps for the rebus hierogly
 - [Parallel Helper](https://marketplace.visualstudio.com/items?itemName=camrein.ParallelHelper)
 - [Parallel Checker](https://marketplace.visualstudio.com/items?itemName=LBHSR.ParallelChecker)
 - [Security Code Scan](https://marketplace.visualstudio.com/items?itemName=JaroslavLobacevski.SecurityCodeScanVS2019)
+- [Puma Scan](https://marketplace.visualstudio.com/items?itemName=PumaSecurity.PumaScan)
 
-#### What are the difference between installing "only for me" and "for all users"?
+#### What are the differences between "only for me" and "for all users" installation?
 
 The first option does not need to have administrator rights and the software is installed in the `AppData\Local` user folder.
 
@@ -62,7 +63,9 @@ Inter-process communication will therefore not be available for limited user acc
 
 #### What to do if the check update tells that the SSL certificate is wrong or expired?
 
-The software verifies the validity of the certificate of the update server in addition to the SHA-512 checksum of the installation file before downloading and running it. You can manually check the latest version available online in case of problem.
+The software verifies the validity of the certificate of the update server in addition to the SHA-512 checksum of the installation file before downloading and running it.
+
+You can manually check the latest version available online in case of problem.
 
 #### What to do if the application does not work normally despite restoring settings?
 
