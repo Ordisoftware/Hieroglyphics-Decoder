@@ -450,5 +450,10 @@
       <Version>6.0.0</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\Setup\OrdisoftwareHieroglyphicsDecoderSetup.iss">
+      <Link>Properties\OrdisoftwareHieroglyphicsDecoderSetup.iss</Link>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
