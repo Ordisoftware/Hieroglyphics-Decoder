@@ -47,6 +47,13 @@ namespace CoolPrintPreview
   /// it displays pages as they are rendered. By contrast, the standard control
   /// waits until the entire document is rendered before it displays anything.
   /// </remarks>
+  [SuppressMessage("Design", "GCop132:Since the type is inferred, use 'var' instead", Justification = "<En attente>")]
+  [SuppressMessage("Design", "GCop135:{0}", Justification = "<En attente>")]
+  [SuppressMessage("Refactoring", "GCop647:Shorten this property by defining it as expression-bodied.", Justification = "<En attente>")]
+  [SuppressMessage("Refactoring", "GCop628:Maybe define this method on '{0}' class as it's using {1} of its members (compared to {2} from this type)", Justification = "<En attente>")]
+  [SuppressMessage("Refactoring", "GCop622:Reverse your IF condition and return. Then move the nested statements to after the IF.", Justification = "<En attente>")]
+  [SuppressMessage("Naming", "GCop204:Rename the variable '{0}' to something clear and meaningful.", Justification = "<En attente>")]
+  [SuppressMessage("Refactoring", "GCop638:Shorten this method by defining it as expression-bodied.", Justification = "<En attente>")]
   internal class CoolPrintPreviewControl : UserControl
   {
     //-------------------------------------------------------------
@@ -431,6 +438,7 @@ namespace CoolPrintPreview
         _ => base.IsInputKey(keyData),
       };
     }
+
     protected override void OnKeyDown(KeyEventArgs e)
     {
       base.OnKeyDown(e);
@@ -560,7 +568,9 @@ namespace CoolPrintPreview
         case ZoomMode.TwoPages:
           rc.Width *= 2; // << two pages side-by-side
 #pragma warning disable F00001 // GotoConsideredHarmful
+#pragma warning disable GCop141 // Avoid using goto command
           goto case ZoomMode.FullPage;
+#pragma warning restore GCop141 // Avoid using goto command
 #pragma warning restore F00001 // GotoConsideredHarmful
         case ZoomMode.FullPage:
           double zoomX = ( rc.Width > 0 ) ? rcCli.Width / (double)rc.Width : 0;
