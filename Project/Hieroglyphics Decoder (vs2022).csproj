@@ -27,7 +27,7 @@
     <NoWarn>1587, 1591, 0649</NoWarn>
     <Prefer32Bit>false</Prefer32Bit>
     <DocumentationFile>..\Bin\Debug\Ordisoftware.Hieroglyphics.Decoder.xml</DocumentationFile>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>preview</LangVersion>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -41,7 +41,7 @@
     <NoWarn>1587, 1591, 0649</NoWarn>
     <Prefer32Bit>false</Prefer32Bit>
     <DocumentationFile>..\Bin\Release\Ordisoftware.Hieroglyphics.Decoder.xml</DocumentationFile>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>preview</LangVersion>
     <DebugSymbols>true</DebugSymbols>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
