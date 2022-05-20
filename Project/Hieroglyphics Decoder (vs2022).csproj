@@ -27,7 +27,7 @@
     <NoWarn>1587, 1591, 0649</NoWarn>
     <Prefer32Bit>false</Prefer32Bit>
     <DocumentationFile>..\Bin\Debug\Ordisoftware.Hieroglyphics.Decoder.xml</DocumentationFile>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>preview</LangVersion>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -41,7 +41,7 @@
     <NoWarn>1587, 1591, 0649</NoWarn>
     <Prefer32Bit>false</Prefer32Bit>
     <DocumentationFile>..\Bin\Release\Ordisoftware.Hieroglyphics.Decoder.xml</DocumentationFile>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>preview</LangVersion>
     <DebugSymbols>true</DebugSymbols>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
@@ -91,6 +91,10 @@
     </Compile>
     <Compile Include="Dependencies\Windows Global Hotkey\HotkeyManager.cs" />
     <Compile Include="Source\Common\Core\Classes\CompilerHelper.cs" />
+    <Compile Include="Source\Common\Core\Classes\CustomColor.cs" />
+    <Compile Include="Source\Common\Core\Data\SQLiteDate.Enums.cs" />
+    <Compile Include="Source\Common\Core\Data\SQLiteDate.Separators.cs" />
+    <Compile Include="Source\Common\Core\Data\SQLiteDate.Settings.cs" />
     <Compile Include="Source\Common\Core\Debug\Chronometer.cs" />
     <Compile Include="Source\Common\Core\Classes\EnumHelper.cs" />
     <Compile Include="Source\Common\Core\Classes\ExportHelper.cs" />
@@ -426,10 +430,10 @@
       <Version>3.5.1</Version>
     </PackageReference>
     <PackageReference Include="GregsStack.InputSimulatorStandard">
-      <Version>1.3.3</Version>
+      <Version>1.3.4</Version>
     </PackageReference>
     <PackageReference Include="Markdig">
-      <Version>0.28.1</Version>
+      <Version>0.30.2</Version>
     </PackageReference>
     <PackageReference Include="morelinq">
       <Version>3.3.2</Version>
@@ -466,7 +470,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Meziantou.Analyzer">
-      <Version>1.0.698</Version>
+      <Version>1.0.701</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
@@ -476,7 +480,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Threading.Analyzers">
-      <Version>17.1.46</Version>
+      <Version>17.2.32</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
