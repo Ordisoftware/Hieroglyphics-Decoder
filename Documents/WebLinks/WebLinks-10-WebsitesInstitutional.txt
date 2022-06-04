@@ -15,11 +15,20 @@ FOLDER-SEPARATOR
 Lang/EN = Institutional websites
 Lang/FR = Sites Web institutionnels
 
-Name = (FR) Consistoire de Paris
-URL = https://www.consistoire.org/archives-des-cours-hebdomadaires/
-
 Name = (FR/EN) Conference of European Rabbis
 URL = https://rabbiscer.org
+
+Name = (FR) Conseil représentatif des institutions juives de France
+URL = http://www.crif.org
+
+Name = (FR) Consistoire de Paris
+URL = https://www.consistoire.org
+
+Name = (FR) Judaïsme en Mouvement
+URL = https://judaismeenmouvement.org
+
+Name = (FR) Massorti France
+URL = https://www.massorti.com
 
 -
 
@@ -30,9 +39,6 @@ Name = (FR) Loubavitch France-Europe
 URL = https://www.loubavitchfrance.fr
 
 -
-
-Name = (FR) Massorti France
-URL = https://www.massorti.com
 
 Name = (EN) The Rabbinical Assembly
 URL = https://www.rabbinicalassembly.org

@@ -10,27 +10,20 @@
 ; Use the "-" char at the beginning of a line to insert a separator
 ; --------------------------------------------------------------------------------------------------
 
-Lang/EN = Asher 'Haïm HaLevi
-Lang/FR = Asher 'Haïm HaLevi
+Lang/EN = YouTube playlists Sciences
+Lang/FR = Playlistes YouTube de Sciences
 
-Name = (FR) Le problème religieux
-URL = https://asherhaimhalevi.ordisoftware.com/works/the-religious-problem/
+Name = (FR) Mathématiques et physiques
+URL = https://www.youtube.com/playlist?list=PLSn7yTHwEx-Boo3Ss5OZSYCNHEGpFXcPc
 
--
+Name = (FR/EN) Biologie et génétique
+URL = https://www.youtube.com/playlist?list=PLSn7yTHwEx-BEv_KNGXktzeF8oBTXGoKR
 
-Name = (FR) L'alphabet hébreu
-URL = https://asherhaimhalevi.ordisoftware.com/works/hebrew-alphabet/
+Name = (FR/EN) Bodybuilding et nutrition
+URL = https://www.youtube.com/playlist?list=PLSn7yTHwEx-BEAk_k9s5tCMG5ZPwK6KVz
 
-Name = (FR) L'alliance
-URL = https://asherhaimhalevi.ordisoftware.com/works/alliance/
+Name = (FR) Mentalisme et psychologie
+URL = https://www.youtube.com/playlist?list=PLSn7yTHwEx-B3m_jadFZi3rvJx9LPhHeG
 
-Name = (FR) Les séfitot
-URL = https://asherhaimhalevi.ordisoftware.com/works/sefirot/
-
-Name = (FR) Epitaphe pour Kémistes de Kémet
-URL = https://asherhaimhalevi.ordisoftware.com/works/epitaph/
-
--
-
-Name = (FR) Playliste YouTube - Exposés tirés des ouvrages
-URL = https://www.youtube.com/playlist?list=PLSn7yTHwEx-DL6u9qWpRtF1vEAEVxe1Hk
+Name = (FR) Documentaires et sujets de société
+URL = https://www.youtube.com/playlist?list=PLSn7yTHwEx-DfPB3GAU-e6hLSzJIjVc18
