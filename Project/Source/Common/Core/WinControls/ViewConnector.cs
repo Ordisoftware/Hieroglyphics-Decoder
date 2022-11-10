@@ -10,22 +10,25 @@
 /// relevant directory) where a recipient would be likely to look for such a notice.
 /// You may add additional accurate notices of copyright ownership.
 /// </license>
-/// <created> 2021-09 </created>
-/// <edited> 2022-03 </edited>
+/// <created> 2016-04 </created>
+/// <edited> 2022-11 </edited>
 namespace Ordisoftware.Core;
 
-static public class CollectionsHelper
-{
+/// <summary>
+/// Provides panel view connector for a component.
+/// </summary>
+public readonly record struct ViewConnector<TComponent>(
+  TComponent Component,
+  Panel Panel,
+  Control Focused)
+where TComponent : Component;
 
-  static public List<List<T>> Split<T>(this IEnumerable<T> collection, Func<T, bool> predicate)
-  {
-    var slices = new List<List<T>> { new List<T>() };
-    foreach ( var item in collection )
-    {
-      slices[slices.Count - 1].Add(item);
-      if ( predicate(item) )
-        slices.Add(new List<T>());
-    }
-    return slices;
-  }
+/// <summary>
+/// Provides ViewConnector dictionary.
+/// </summary>
+[SuppressMessage("Major Code Smell", "S3925:\"ISerializable\" should be implemented correctly", Justification = "N/A")]
+public sealed class ViewConnectors<TView, TComponent> : Dictionary<TView, ViewConnector<TComponent>>
+where TView : Enum
+where TComponent : Component
+{
 }

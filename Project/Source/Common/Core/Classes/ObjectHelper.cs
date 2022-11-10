@@ -17,39 +17,8 @@ namespace Ordisoftware.Core;
 /// <summary>
 /// Provides object helper.
 /// </summary>
-static class ObjectHelper
+static public partial class ObjectHelper
 {
-
-  /// <summary>
-  /// Gets an IEnumerable<typeparamref name="ListViewItem"/> from a ListView.ListViewItemCollection collection.
-  /// </summary>
-  /// <param name="collection">The collection.</param>
-  static public IEnumerable<ListViewItem> AsIEnumerable(this ListView.ListViewItemCollection collection)
-  {
-    foreach ( ListViewItem item in collection )
-      yield return item;
-  }
-
-  /// <summary>
-  /// Gets an IEnumerable<typeparamref name="T"/> from a ComboBox.Items collection.
-  /// </summary>
-  /// <typeparam name="T">Generic type parameter.</typeparam>
-  /// <param name="collection">The collection.</param>
-  static public IEnumerable<T> AsIEnumerable<T>(this ComboBox.ObjectCollection collection)
-  {
-    foreach ( T item in collection )
-      yield return item;
-  }
-
-  /// <summary>
-  /// Gets an IEnumerable<DataGridViewRow/> from a DataGridView.DataGridViewRowCollection.
-  /// </summary>
-  /// <param name="collection">The collection.</param>
-  static public IEnumerable<DataGridViewRow> AsIEnumerable(this DataGridViewRowCollection collection)
-  {
-    foreach ( DataGridViewRow item in collection )
-      yield return item;
-  }
 
   /// <summary>
   /// Converts the type of a convertible object to another type.
@@ -74,7 +43,23 @@ static class ObjectHelper
   }
 
   /// <summary>
-  /// A bool extension method that determine if one is true and some others not.
+  /// Indicates if value is between min and max.
+  /// </summary>
+  static public bool IsInRange(this int value, int min, int max)
+  {
+    return value >= min && value <= max;
+  }
+
+  /// <summary>
+  /// Indicates if an index is in the range of a list.
+  /// </summary>
+  static public bool IsValidIndex(this IList list, int index)
+  {
+    return index >= 0 && index < list.Count;
+  }
+
+  /// <summary>
+  /// Indicates if one is true and some others not.
   /// </summary>
   /// <param name="first">The first to act on.</param>
   /// <param name="others">A variable-length parameters list containing others.</param>
@@ -87,7 +72,7 @@ static class ObjectHelper
   }
 
   /// <summary>
-  /// A bool extension method that determine if one is true and some others not.
+  /// Indicates if one is true and some others not.
   /// </summary>
   /// <param name="values">A variable-length parameters list containing values.</param>
   /// <returns>
