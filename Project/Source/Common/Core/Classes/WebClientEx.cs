@@ -10,19 +10,31 @@
 /// relevant directory) where a recipient would be likely to look for such a notice.
 /// You may add additional accurate notices of copyright ownership.
 /// </license>
-/// <created> 2020-08 </created>
-/// <edited> 2020-08 </edited>
+/// <created> 2016-04 </created>
+/// <edited> 2022-03 </edited>
 namespace Ordisoftware.Core;
 
 /// <summary>
-/// Provides SQLite exception.
+/// Provides web client with timeout.
 /// </summary>
-[Serializable]
-public class SQLiteException : System.Data.Common.DbException
+public class WebClientEx : WebClient
 {
-  public SQLiteException() { }
-  public SQLiteException(string message) : base(message) { }
-  public SQLiteException(string message, Exception innerException) : base(message, innerException) { }
-  public SQLiteException(SerializationInfo info, StreamingContext context) : base(info, context) { }
-  public SQLiteException(string message, int errorCode) : base(message, errorCode) { }
+
+  static public int DefaultTimeOutSeconds { get; set; } = 5;
+
+  public int TimeOutSeconds { get; set; }
+
+  public WebClientEx(int timeOutSeconds = 0)
+  {
+    if ( timeOutSeconds <= 0 ) timeOutSeconds = DefaultTimeOutSeconds;
+    TimeOutSeconds = timeOutSeconds;
+  }
+
+  protected override WebRequest GetWebRequest(Uri address)
+  {
+    var result = base.GetWebRequest(address);
+    result.Timeout = TimeOutSeconds * 1000;
+    return result;
+  }
+
 }

@@ -21,41 +21,31 @@ static public partial class StringHelper
 {
 
   /// <summary>
-  /// Indicates if a string is empty.
+  /// Removes all starting and ending spaces.
   /// </summary>
-  /// <returns>
-  /// true if empty, false if not.
-  /// </returns>
   /// <param name="str">The string to act on.</param>
-  static public bool IsEmpty(this string str)
-    => str.Length == 0;
+  static public string TrimSpaces(this string str)
+    => str.Trim(' ');
 
   /// <summary>
-  /// Indicates if a string is null or empty.
+  /// Removes all starting and ending empty lines.
   /// </summary>
-  /// <returns>
-  /// true if a null or is empty, false if not.
-  /// </returns>
   /// <param name="str">The string to act on.</param>
-  static public bool IsNullOrEmpty(this string str)
-    => string.IsNullOrEmpty(str);
+  static public string TrimEmptyLines(this string str)
+    => str.Trim(EmptyLineCharArray);
 
   /// <summary>
-  /// Indicates if a string starts with one of these comment symbol: # - ; /* //
+  /// Removes all starting and ending empty lines and spaces.
   /// </summary>
   /// <param name="str">The string to act on.</param>
-  static public bool IsCommented(this string str)
-    => str.StartsWith("/*", StringComparison.Ordinal)
-       || str.StartsWith("//", StringComparison.Ordinal)
-       || str.StartsWith(";", StringComparison.Ordinal)
-       || str.StartsWith("#", StringComparison.Ordinal)
-       || str.StartsWith("--", StringComparison.Ordinal);
+  static public string TrimEmptyLinesAndSpaces(this string str)
+    => str.Trim(EmptyLineAndSpaceCharArray);
 
   /// <summary>
-  /// Sets all first letter to upper case.
+  /// Trims any first and last char.
   /// </summary>
   /// <param name="str">The string to act on.</param>
-  static public string Titleize(this string str)
-    => CultureInfo.CurrentCulture.TextInfo.ToTitleCase(str);
+  static public string TrimFirstLast(this string str)
+    => new(str.Skip(1).SkipLast(1).ToArray());
 
 }

@@ -10,19 +10,23 @@
 /// relevant directory) where a recipient would be likely to look for such a notice.
 /// You may add additional accurate notices of copyright ownership.
 /// </license>
-/// <created> 2020-08 </created>
-/// <edited> 2020-08 </edited>
+/// <created> 2019-11 </created>
+/// <edited> 2022-11 </edited>
 namespace Ordisoftware.Core;
 
-/// <summary>
-/// Provides SQLite exception.
-/// </summary>
-[Serializable]
-public class SQLiteException : System.Data.Common.DbException
+class AutoMenuManager
 {
-  public SQLiteException() { }
-  public SQLiteException(string message) : base(message) { }
-  public SQLiteException(string message, Exception innerException) : base(message, innerException) { }
-  public SQLiteException(SerializationInfo info, StreamingContext context) : base(info, context) { }
-  public SQLiteException(string message, int errorCode) : base(message, errorCode) { }
+
+  static public string ExitMessage { get; set; } = "Goodbye.";
+
+  static public int SeperatorLength { get; set; } = 100;
+
+  static public string Separator => new('-', SeperatorLength);
+
+  public AutoMenu Root { get; init; }
+
+  public AutoMenuManager(AutoMenu root) => Root = root;
+
+  public void Run() => Root.Run();
+
 }

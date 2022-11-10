@@ -11,7 +11,7 @@
 /// You may add additional accurate notices of copyright ownership.
 /// </license>
 /// <created> 2016-04 </created>
-/// <edited> 2022-04 </edited>
+/// <edited> 2022-11 </edited>
 namespace Ordisoftware.Core;
 
 /// <summary>
@@ -21,41 +21,26 @@ static public partial class StringHelper
 {
 
   /// <summary>
-  /// Indicates if a string is empty.
+  /// Left indent a text.
   /// </summary>
   /// <returns>
-  /// true if empty, false if not.
+  /// A string.
   /// </returns>
   /// <param name="str">The string to act on.</param>
-  static public bool IsEmpty(this string str)
-    => str.Length == 0;
+  /// <param name="margin">Margin.</param>
+  static public string Indent(this string str, int margin)
+    => str.Indent(margin, margin);
 
   /// <summary>
-  /// Indicates if a string is null or empty.
+  /// Does a left indent a text.
   /// </summary>
   /// <returns>
-  /// true if a null or is empty, false if not.
+  /// A string.
   /// </returns>
   /// <param name="str">The string to act on.</param>
-  static public bool IsNullOrEmpty(this string str)
-    => string.IsNullOrEmpty(str);
-
-  /// <summary>
-  /// Indicates if a string starts with one of these comment symbol: # - ; /* //
-  /// </summary>
-  /// <param name="str">The string to act on.</param>
-  static public bool IsCommented(this string str)
-    => str.StartsWith("/*", StringComparison.Ordinal)
-       || str.StartsWith("//", StringComparison.Ordinal)
-       || str.StartsWith(";", StringComparison.Ordinal)
-       || str.StartsWith("#", StringComparison.Ordinal)
-       || str.StartsWith("--", StringComparison.Ordinal);
-
-  /// <summary>
-  /// Sets all first letter to upper case.
-  /// </summary>
-  /// <param name="str">The string to act on.</param>
-  static public string Titleize(this string str)
-    => CultureInfo.CurrentCulture.TextInfo.ToTitleCase(str);
+  /// <param name="first">First line indentation.</param>
+  /// <param name="corpus">Other lines indentation.</param>
+  static public string Indent(this string str, int first, int corpus)
+    => $"{new string(' ', first)}{str.Replace(Globals.NL, $"{Globals.NL}{new string(' ', corpus)}")}";
 
 }
