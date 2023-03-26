@@ -407,6 +407,9 @@
       <Link>README.md</Link>
     </None>
     <None Include=".editorconfig" />
+    <None Include="Dependencies\Windows Global Hotkey\Windows Global Hotkey %28Before-Refactor-2021.12.12%29.zip" />
+    <None Include="Dependencies\Windows Global Hotkey\Windows Global Hotkey %28Public Domain%29.url" />
+    <None Include="Dependencies\Windows Global Hotkey\Windows-Global-Hotkey-master.zip" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -487,7 +490,7 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
     <PackageReference Include="Meziantou.Analyzer">
-      <Version>2.0.22</Version>
+      <Version>2.0.26</Version>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
