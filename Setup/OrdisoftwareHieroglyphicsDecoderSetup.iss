@@ -1,4 +1,4 @@
-#define MyAppVersion "0.0"
+#define MyAppVersion "1.0"
 #define MyAppName "Hieroglyphics Decoder"
 #define MyAppNameNoSpace "HieroglyphicsDecoder"
 #define MyAppExeName "Ordisoftware.Hieroglyphics.Decoder.exe"
