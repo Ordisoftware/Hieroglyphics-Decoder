@@ -1,6 +1,6 @@
 ﻿/// <license>
-/// This file is part of Ordisoftware Hebrew Letters.
-/// Copyright 2012-2023 Olivier Rogier.
+/// This file is part of Ordisoftware Hieroglyphics Decoder.
+/// Copyright 2021-2023 Olivier Rogier.
 /// See www.ordisoftware.com for more information.
 /// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
 /// If a copy of the MPL was not distributed with this file, You can obtain one at
@@ -11,7 +11,7 @@
 /// You may add additional accurate notices of copyright ownership.
 /// </license>
 /// <created> 2021-10 </created>
-/// <edited> 2022-03 </edited>
+/// <edited> 2021-10 </edited>
 namespace Ordisoftware.Hieroglyphics.Decoder;
 
 using System.IO.Pipes;
@@ -38,7 +38,7 @@ static partial class Program
     try
     {
       Globals.ChronoStartingApp.Start();
-      Globals.SoftpediaURL = "https://www.softpedia.com/get/Others/Home-Education/Hebrew-Letters.shtml";
+      Globals.SoftpediaURL = "";
       Globals.AlternativeToURL = "";
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
