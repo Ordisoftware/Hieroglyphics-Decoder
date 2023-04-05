@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Hieroglyphics Decoder</title>
+</head>
+<body>
+
+    <p><a href="LICENSE"><img src="https://img.shields.io/github/license/ordisoftware/hieroglyphics-decoder" alt="License: PML 2.0" /></a> 
+<a href="#"><img src="https://img.shields.io/github/repo-size/ordisoftware/hieroglyphics-decoder" alt="GitHub repo size" /></a> 
+<a href="https://github.com/Ordisoftware/Hieroglyphics-Decoder/tree/master/Project"><img src="https://img.shields.io/github/languages/code-size/ordisoftware/hieroglyphics-decoder" alt="GitHub code size in bytes" /></a> 
+<a href="https://github.com/Ordisoftware/Hieroglyphics-Decoder/tree/master/Project"><img src="https://img.shields.io/tokei/lines/github/ordisoftware/hieroglyphics-decoder" alt="Lines of code" /></a> <br/>
+<a href="https://www.microsoft.com/windows/"><img src="https://img.shields.io/badge/Windows%207%2B-279CE8?label=os" alt="OS: Windows" /></a> 
+<a href="https://github.com/dotnet/winforms"><img src="https://img.shields.io/badge/WinForms-279CE8?label=ui" alt="UI: WinForms" /></a> 
+<a href="https://dotnet.microsoft.com"><img src="https://img.shields.io/badge/.NET%204.8-6E5FA6?label=framework" alt="Framework: .Net" /></a> 
+<a href="https://visualstudio.microsoft.com"><img src="https://img.shields.io/badge/Visual%20Studio%202022-6E5FA6.svg?label=ide" alt="IDE: Visual Studio" /></a> 
+<a href="https://docs.microsoft.com/dotnet/csharp/"><img src="https://img.shields.io/badge/C%23%2011-%23239120.svg?label=lang" alt="Lang: C#" /></a> 
+<a href="https://www.sqlite.org"><img src="https://img.shields.io/badge/SQLite%203.40-darkgoldenrod.svg?label=db" alt="DB: SQLite" /></a> <br/>
+<a href="https://www.ordisoftware.com/hieroglyphics-decoder"><img src="https://img.shields.io/badge/-Ordisoftware.com%20Project-355F90?logo=WordPress&amp;logoColor=white" alt="Ordisoftware.com Project" /></a> 
+<a href="https://github.com/Ordisoftware/Guidelines"><img src="https://img.shields.io/badge/-Manufacturing%20Software%20Guidelines-355F90?logo=MicrosoftWord&amp;logoColor=white" alt="Manufacturing Software Guidelines" /></a> </p>
+<h1 id="hieroglyphics-decoder">Hieroglyphics Decoder</h1>
+<p>A libre and open-source software written in C# that helps for the rebus hieroglyph-by-hieroglyph study and analysis of shenus or cartouches and frescoes of ancient Egypt.</p>
+<h2 id="table-of-content">Table of content</h2>
+<ol>
+<li><a href="#functionalities">Functionalities</a></li>
+<li><a href="#requirements">Requirements</a></li>
+<li><a href="#frequently-asked-questions">Frequently asked questions</a></li>
+<li><a href="#keyboard-shortcuts">Keyboard shortcuts</a></li>
+<li><a href="#changelog">Changelog</a></li>
+</ol>
+<h2 id="functionalities">Functionalities</h2>
+<ul>
+<li>Hieroglyphs database with their customizable meanings.</li>
+<li>Analyze a shenu hieroglyph-by-hieroglyph to get a sentence describing its sense.</li>
+<li>Online research using several dictionaries.</li>
+<li>Store results in a notebook.</li>
+<li>Copy the result or a screenshot to the clipboard.</li>
+<li>English, French.</li>
+</ul>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Screen 1024x768 or higher</li>
+<li>Windows 7 SP1 x32/x64 or higher</li>
+<li>Framework .NET 4.8</li>
+<li>SQLite 3.40.1</li>
+</ul>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h4 id="what-code-analyzers-are-used-in-addition-to-visual-studio">What code analyzers are used in addition to Visual Studio?</h4>
+<table>
+<thead>
+<tr>
+<th>IDE Extension</th>
+<th>Project NuGet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2022">SonarLint</a><br><a href="https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2022">Roslynator</a><br><a href="https://marketplace.visualstudio.com/items?itemName=Flash0Ware.F0-Analyzers-VS">F0.Analyzers</a><br><a href="https://marketplace.visualstudio.com/items?itemName=camrein.ParallelHelper">Parallel Helper</a><br><a href="https://marketplace.visualstudio.com/items?itemName=LBHSR.ParallelChecker">Parallel Checker</a><br><a href="https://marketplace.visualstudio.com/items?itemName=SemihOkur.AsyncFixer2022">AsyncFixer</a><br><a href="https://marketplace.visualstudio.com/items?itemName=PRIYANSHUAGRAWAL92.AsyncMethodNameFixer">Async Method Name Fixer</a><br><a href="https://marketplace.visualstudio.com/items?itemName=vs-publisher-363830.U2UConsultPerformanceCodeAnalyzersforC7">U2U Consult Performance Analyzers</a><br><a href="https://marketplace.visualstudio.com/items?itemName=JaroslavLobacevski.SecurityCodeScanVS2019">Security Code Scan</a><br><a href="https://marketplace.visualstudio.com/items?itemName=PumaSecurity.PumaScan">Puma Scan</a></td>
+<td><a href="https://github.com/dotnet/roslyn-analyzers">Microsoft.CodeAnalysis.NetAnalyzers</a><br><a href="https://github.com/microsoft/vs-threading">Microsoft.VisualStudio.Threading.Analyzers</a><br><a href="https://github.com/cezarypiatek/MultithreadingAnalyzer">MultithreadingAnalyzer</a><br><a href="https://github.com/meziantou/Meziantou.Analyzer">Meziantou.Analyzer</a><br><a href="https://github.com/Geeksltd/GCop">GCop.All.Common</a><br><a href="https://github.com/DotNetAnalyzers/ReflectionAnalyzers">ReflectionAnalyzers</a><br><a href="https://github.com/DotNetAnalyzers/IDisposableAnalyzers">IDisposableAnalyzers</a><br><a href="https://github.com/SergeyTeplyakov/ErrorProne.NET">ErrorProne.NET.CoreAnalyzers</a><br><a href="https://github.com/SergeyTeplyakov/ErrorProne.NET">ErrorProne.NET.Structs</a><br><br></td>
+</tr>
+</tbody>
+</table>
+<h4 id="what-to-do-if-the-check-update-tells-that-the-ssl-certificate-is-wrong-or-expired">What to do if the check update tells that the SSL certificate is wrong or expired?</h4>
+<p>The software verifies the validity of the certificate of the update server in addition to the SHA-512 checksum of the installation file before downloading and running it.</p>
+<p>You can manually check the latest version available online in case of problem.</p>
+<h4 id="what-to-do-if-the-application-does-not-work-normally-despite-restoring-settings">What to do if the application does not work normally despite restoring settings?</h4>
+<p>Use the Start Menu link:</p>
+<p> <code>Ordisoftware\Hieroglyphics Decoder\Reset Hieroglyphics Decoder settings</code></p>
+<p>This will erase all settings as well as those of old versions, which should resolve issues if there is a conflict, otherwise please contact support.</p>
+<h4 id="what-is-the-windows-double-buffering">What is the Windows double-buffering?</h4>
+<p>When enabled, this will speed up rendering of the main form when it is displayed, but it may cause a slight black flicker.</p>
+<p>When disabled, top menu and some controls painting may cause latency, and dynamic items can be generated slowly the larger the number.</p>
+<h2 id="keyboard-shortcuts">Keyboard shortcuts</h2>
+<table>
+<thead>
+<tr>
+<th>Keys</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ctrl + Tab</td>
+<td>Next view</td>
+</tr>
+<tr>
+<td>Shift + Ctrl + Tab</td>
+<td>Previous view</td>
+</tr>
+<tr>
+<td>F1</td>
+<td>Analysis view</td>
+</tr>
+<tr>
+<td>F2</td>
+<td>Data view</td>
+</tr>
+<tr>
+<td>F3</td>
+<td>Notebook view</td>
+</tr>
+<tr>
+<td>F5 (or Ctrl + F)</td>
+<td>Search</td>
+</tr>
+<tr>
+<td>Alt + N</td>
+<td>New window</td>
+</tr>
+<tr>
+<td>Alt + T</td>
+<td>Tools menu</td>
+</tr>
+<tr>
+<td>Alt + L</td>
+<td>Web links menu</td>
+</tr>
+<tr>
+<td>Alt + S</td>
+<td>Settings menu</td>
+</tr>
+<tr>
+<td>Alt + I</td>
+<td>Information menu</td>
+</tr>
+<tr>
+<td>F9</td>
+<td>Preferences</td>
+</tr>
+<tr>
+<td>F10</td>
+<td>Log file window</td>
+</tr>
+<tr>
+<td>F11</td>
+<td>Usage statistics window</td>
+</tr>
+<tr>
+<td>F12</td>
+<td>About</td>
+</tr>
+<tr>
+<td>Alt + F4 (or Escape)</td>
+<td>Exit application</td>
+</tr>
+</tbody>
+</table>
+<h2 id="changelog">Changelog</h2>
+<h4 id="section">2021.10.02</h4>
+<ul>
+<li>GitHub repo created.</li>
+</ul>
+
+
+</body>
+</html>
