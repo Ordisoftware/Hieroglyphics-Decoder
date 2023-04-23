@@ -1,7 +1,7 @@
 ﻿[![License: PML 2.0](https://img.shields.io/github/license/ordisoftware/Hieroglyphics-Decoder)](LICENSE)&nbsp;
 [![GitHub repo size](https://img.shields.io/github/repo-size/ordisoftware/Hieroglyphics-Decoder)](#)&nbsp;
-[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ordisoftware/Hieroglyphics-Decoder)](https://github.com/Ordisoftware/Hieroglyphics-Decoder/tree/master/Project)&nbsp;
-[![Lines of code](https://img.shields.io/tokei/lines/github/ordisoftware/Hieroglyphics-Decoder)](https://github.com/Ordisoftware/Hieroglyphics-Decoder/tree/master/Project)&nbsp;<br/>
+[![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ordisoftware/Hieroglyphics-Decoder)](https://github.com/Ordisoftware/Hieroglyphics-Decoder/tree/main/Project)&nbsp;
+[![Lines of code](https://img.shields.io/tokei/lines/github/ordisoftware/Hieroglyphics-Decoder)](https://github.com/Ordisoftware/Hieroglyphics-Decoder/tree/main/Project)&nbsp;<br/>
 [![OS: Windows](https://img.shields.io/badge/Windows%207%2B-279CE8?label=os)](https://www.microsoft.com/windows/)&nbsp;
 [![UI: WinForms](https://img.shields.io/badge/WinForms-279CE8?label=ui)](https://github.com/dotnet/winforms)&nbsp;
 [![Framework: .Net](https://img.shields.io/badge/.NET%204.8-6E5FA6?label=framework)](https://dotnet.microsoft.com)&nbsp;
