@@ -11,7 +11,7 @@
 /// You may add additional accurate notices of copyright ownership.
 /// </license>
 /// <created> 2020-12 </created>
-/// <edited> 2022-03 </edited>
+/// <edited> 2023-07 </edited>
 namespace Ordisoftware.Core;
 
 /// <summary>
@@ -73,17 +73,17 @@ static public class ExportHelper
   /// <summary>
   /// Fills a combo box with the specified list of targets.
   /// </summary>
-  /// <param name="combobox">The combobox.</param>
+  /// <param name="comboBox">The combo box.</param>
   /// <param name="list">The list.</param>
   /// <param name="valueDefault">The default value.</param>
-  static public void Fill<T>(this ComboBox combobox, NullSafeOfStringDictionary<T> list, T valueDefault)
+  static public void Fill<T>(this ComboBox comboBox, NullSafeOfStringDictionary<T> list, T valueDefault)
   where T : struct, Enum
   {
     foreach ( KeyValuePair<T, string> item in list )
     {
-      int index = combobox.Items.Add(item);
+      int index = comboBox.Items.Add(item);
       if ( item.Key.Equals(valueDefault) )
-        combobox.SelectedIndex = index;
+        comboBox.SelectedIndex = index;
     }
   }
 
@@ -112,6 +112,18 @@ static public class ExportHelper
       ImageExportTarget.GIF => ImageFormat.Gif,
       _ => throw new AdvNotImplementedException(value),
     };
+  }
+
+  static public bool Run(this FileDialog dialog,
+                         string filename,
+                         DataExportTarget preferred,
+                         NullSafeOfStringDictionary<DataExportTarget> board)
+  {
+    dialog.FileName = filename;
+    for ( int index = 0; index < board.Count; index++ )
+      if ( board.ElementAt(index).Key == preferred )
+        dialog.FilterIndex = index + 1;
+    return dialog.ShowDialog() == DialogResult.OK;
   }
 
 }
