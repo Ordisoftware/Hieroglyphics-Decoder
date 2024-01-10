@@ -8,7 +8,7 @@
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Ordisoftware")]
 [assembly: AssemblyProduct("www.ordisoftware.com/projects/hebrew-letters")]
-[assembly: AssemblyCopyright("Copyright 2021-2023 Olivier Rogier")]
+[assembly: AssemblyCopyright("Copyright 2021-2024 Olivier Rogier")]
 [assembly: AssemblyTrademark("www.ordisoftware.com")]
 [assembly: AssemblyCulture("")]
 

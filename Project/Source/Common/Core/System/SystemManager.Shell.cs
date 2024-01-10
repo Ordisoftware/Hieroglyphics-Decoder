@@ -1,6 +1,6 @@
 ﻿/// <license>
 /// This file is part of Ordisoftware Core Library.
-/// Copyright 2004-2023 Olivier Rogier.
+/// Copyright 2004-2024 Olivier Rogier.
 /// See www.ordisoftware.com for more information.
 /// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
 /// If a copy of the MPL was not distributed with this file, You can obtain one at
@@ -38,7 +38,7 @@ static public partial class SystemManager
   {
     try
     {
-      CommandLineArguments = args.ToList();
+      CommandLineArguments = [.. args];
       var options = CommandLine.Parser.Default.ParseArguments<T>(args);
       if ( options.Tag != CommandLine.ParserResultType.Parsed )
       {
