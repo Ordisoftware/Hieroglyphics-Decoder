@@ -702,7 +702,7 @@ namespace Infralution.Localization
         //
         if ( isVB )
         {
-          fieldName = fieldName.Substring(1, fieldName.Length - 1);
+          fieldName = fieldName.Substring(1);
         }
 
         // check whether this field is a localized component of the parent
@@ -720,9 +720,9 @@ namespace Infralution.Localization
 
             // if this component is an extender provider then keep track of it
             //
-            if ( childComponent is IExtenderProvider )
+            if ( childComponent is IExtenderProvider provider )
             {
-              extenderProviders[childComponent.GetType()] = childComponent as IExtenderProvider;
+              extenderProviders[childComponent.GetType()] = provider;
             }
           }
         }

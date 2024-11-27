@@ -19,9 +19,6 @@ URL = https://www.youtube.com/channel/UC0iLLG9ha8yShk7BPXvDXJw
 Name = (FR) Beit Ha-Zohar 
 URL = https://www.youtube.com/channel/UCcy6coS9yFqYlcxxNYkgWvQ
 
-Name = (FR) Chiourim.com
-URL = https://www.youtube.com/channel/UCGtRAjg1uXlrRB5f6qDKFHg
-
 Name = (FR) Espace Torah
 URL = https://www.youtube.com/channel/UCS3TXWo_jE-_hzG5tCzfTkA
 
@@ -39,9 +36,6 @@ URL = https://www.youtube.com/@OhelTV
 
 Name = (FR) La Yéchiva des étudiants
 URL = https://www.youtube.com/@yechivaetudiants
-
-Name = (FR) Torah Box
-URL = https://www.youtube.com/channel/UCNgEEqkr9UeSqxJAHxe6-KA
 
 Name = (FR) Torah de Vie
 URL = https://www.youtube.com/channel/UC89piZNg765Z9kz_BC3-pow

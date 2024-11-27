@@ -85,11 +85,12 @@ static public class StackMethods
   [SuppressMessage("Performance", "U2U1017:Initialized locals should be used", Justification = "N/A")]
   [SuppressMessage("Design", "GCop176:This anonymous method should not contain complex code, Instead call other focused methods to perform the complex logic", Justification = "N/A")]
   [SuppressMessage("Major Bug", "S2583:Conditionally executed code should be reachable", Justification = "Analysis error")]
+  [SuppressMessage("Major Code Smell", "S127:\"for\" loop stop conditions should be invariant", Justification = "<En attente>")]
   static public string JustifyParagraph(string text, int width, Font font)
   {
     var result = new StringBuilder(text.Length + 20);
     var ParagraphsList = new List<string>();
-    ParagraphsList.AddRange(text.Split(new[] { Globals.NL }, StringSplitOptions.None));
+    ParagraphsList.AddRange(text.Split([Globals.NL], StringSplitOptions.None));
     int checkoverflow = 0;
     foreach ( string Paragraph in ParagraphsList )
     {
@@ -436,6 +437,7 @@ static public class StackMethods
   [SuppressMessage("CodeQuality", "IDE0079:Retirer la suppression inutile", Justification = "N/A")]
   [SuppressMessage("Vulnerability", "SEC0112:Unvalidated File Path", Justification = "N/A")]
   [SuppressMessage("Design", "MA0060:The value returned by Stream.Read/Stream.ReadAsync is not used", Justification = "N/A")]
+  [SuppressMessage("Minor Bug", "S2674:The length returned from a stream read should be checked", Justification = "N/A")]
   static public DateTime GetLinkerTime(this Assembly assembly, TimeZoneInfo target = null)
   {
     var filePath = assembly.Location;

@@ -26,6 +26,7 @@
 [assembly: SuppressMessage("Minor Code Smell", "S3963:\"static\" fields should be initialized inline", Justification = "Opinion", Scope = "module")]
 [assembly: SuppressMessage("Minor Code Smell", "S2386:Mutable fields should not be \"public static\"", Justification = "Opinion", Scope = "module")]
 [assembly: SuppressMessage("Minor Code Smell", "S4663:Comments should not be empty", Justification = "Opinion", Scope = "module")]
+[assembly: SuppressMessage("Minor Code Smell", "S2325:Methods and properties that don't access instance data should be static", Justification = "Opinion", Scope = "module")]
 [assembly: SuppressMessage("Minor Bug", "S3887:Mutable, non-private fields should not be \"readonly\"", Justification = "Opinion", Scope = "module")]
 
 [assembly: SuppressMessage("Style", "IDE0008:Utiliser un type explicite", Justification = "Opinion", Scope = "module")]
@@ -110,3 +111,4 @@
 // TODO remove if not using .NET Framework
 [assembly: SuppressMessage("Minor Code Smell", "S6603:The collection-specific \"TrueForAll\" method should be used instead of the \"All\" extension", Justification = "N/A for .NET Framework", Scope = "module")]
 [assembly: SuppressMessage("Minor Code Smell", "S6605:Collection-specific \"Exists\" method should be used instead of the \"Any\" extension", Justification = "N/A for .NET Framework", Scope = "module")]
+[assembly: SuppressMessage("Reliability", "CA2022:Éviter les lectures incorrectes avec « Stream.Read »", Justification = "N/A for .NET Framework", Scope = "module")]
