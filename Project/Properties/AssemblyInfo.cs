@@ -1,6 +1,4 @@
-﻿using System.Resources;
-
-// Les informations générales relatives à un assembly dépendent de
+﻿// Les informations générales relatives à un assembly dépendent de
 // l'ensemble d'attributs suivant. Changez les valeurs de ces attributs pour modifier les informations
 // associées à un assembly.
 [assembly: AssemblyTitle("Hieroglyphics Decoder")]
@@ -8,7 +6,7 @@
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Ordisoftware")]
 [assembly: AssemblyProduct("www.ordisoftware.com/projects/hebrew-letters")]
-[assembly: AssemblyCopyright("Copyright 2021-2024 Olivier Rogier")]
+[assembly: AssemblyCopyright("Copyright 2021-2025 Olivier Rogier")]
 [assembly: AssemblyTrademark("www.ordisoftware.com")]
 [assembly: AssemblyCulture("")]
 
