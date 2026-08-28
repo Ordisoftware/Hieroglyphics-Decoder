@@ -1,6 +1,6 @@
 ﻿/// <license>
 /// This file is part of Ordisoftware Core Library.
-/// Copyright 2004-2025 Olivier Rogier.
+/// Copyright 2004-2026 Olivier Rogier.
 /// See www.ordisoftware.com for more information.
 /// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
 /// If a copy of the MPL was not distributed with this file, You can obtain one at
@@ -140,7 +140,7 @@ static public class WebCheckUpdate
     try
     {
       string path = useGitHub ? Globals.CheckUpdateGitHubURL : Globals.CheckUpdateURL;
-      lines = client.DownloadString(path).SplitNoEmptyLines(useGitHub).Take(2).ToList();
+      lines = [.. client.DownloadString(path).SplitNoEmptyLines(useGitHub).Take(2)];
     }
     catch ( Exception ex )
     {
@@ -165,7 +165,7 @@ static public class WebCheckUpdate
       version = partsVersion.Length switch
       {
         2 => new Version(Convert.ToInt32(partsVersion[0]),
-                                         Convert.ToInt32(partsVersion[1])),
+                         Convert.ToInt32(partsVersion[1])),
         3 => new Version(Convert.ToInt32(partsVersion[0]),
                          Convert.ToInt32(partsVersion[1]),
                          Convert.ToInt32(partsVersion[2])),

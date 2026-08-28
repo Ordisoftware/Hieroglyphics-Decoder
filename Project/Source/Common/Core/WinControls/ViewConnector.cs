@@ -1,6 +1,6 @@
 ﻿/// <license>
 /// This file is part of Ordisoftware Core Library.
-/// Copyright 2004-2025 Olivier Rogier.
+/// Copyright 2004-2026 Olivier Rogier.
 /// See www.ordisoftware.com for more information.
 /// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
 /// If a copy of the MPL was not distributed with this file, You can obtain one at
@@ -17,10 +17,7 @@ namespace Ordisoftware.Core;
 /// <summary>
 /// Provides panel view connector for a component.
 /// </summary>
-public readonly record struct ViewConnector<TComponent>(
-  TComponent Component,
-  Panel Panel,
-  Control Focused)
+public readonly record struct ViewConnector<TComponent>(TComponent Component, Panel Panel, Control Focused)
 where TComponent : Component;
 
 /// <summary>

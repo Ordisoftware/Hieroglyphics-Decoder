@@ -1,6 +1,6 @@
 ﻿/// <license>
 /// This file is part of Ordisoftware Core Library.
-/// Copyright 2004-2025 Olivier Rogier.
+/// Copyright 2004-2026 Olivier Rogier.
 /// See www.ordisoftware.com for more information.
 /// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
 /// If a copy of the MPL was not distributed with this file, You can obtain one at
@@ -11,7 +11,7 @@
 /// You may add additional accurate notices of copyright ownership.
 /// </license>
 /// <created> 2016-04 </created>
-/// <edited> 2023-04 </edited>
+/// <edited> 2025-02 </edited>
 namespace Ordisoftware.Core;
 
 /// <summary>
@@ -83,12 +83,14 @@ static public partial class Globals
   /// <summary>
   /// Indicates StopWatches.
   /// </summary>
-  static public readonly Stopwatch ChronoStartingApp = new();
-  static public readonly Stopwatch ChronoTranslate = new();
-  static public readonly Stopwatch ChronoLoadData = new();
-  static public readonly Stopwatch ChronoCreateData = new();
-  static public readonly Stopwatch ChronoShowData = new();
-  static public readonly Stopwatch ChronoRendering = new();
+  static public readonly AdvStopwatch ChronoStartingApp = new();
+  static public readonly AdvStopwatch ChronoTranslate = new();
+  static public readonly AdvStopwatch ChronoLoadData = new();
+  static public readonly AdvStopwatch ChronoCreateData = new();
+  static public readonly AdvStopwatch ChronoShowData = new();
+  static public readonly AdvStopwatch ChronoRendering = new();
+  static public readonly AdvStopwatch ChronoBatch = new();
+  static public readonly AdvStopwatch ChronoSubBatch = new();
 
   /// <summary>
   /// Indicates keyboard shortcuts notice form.
@@ -113,7 +115,7 @@ static public partial class Globals
   /// <summary>
   /// Indicates programming language version.
   /// </summary>
-  static public readonly string DevLanguageVersion = "11.0";
+  static public readonly string DevLanguageVersion = "12";
 
   /// <summary>
   /// Indicates IDE name and version.

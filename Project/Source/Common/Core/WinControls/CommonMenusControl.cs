@@ -1,6 +1,6 @@
 ﻿/// <license>
 /// This file is part of Ordisoftware Core Library.
-/// Copyright 2004-2025 Olivier Rogier.
+/// Copyright 2004-2026 Olivier Rogier.
 /// See www.ordisoftware.com for more information.
 /// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
 /// If a copy of the MPL was not distributed with this file, You can obtain one at
@@ -112,11 +112,11 @@ public sealed partial class CommonMenusControl : UserControl
     if ( form is null )
     {
       string str = notice.Value.GetLang() + Globals.NL2 + SysTranslations.NavigationTip.GetLang();
-      form = new MessageBoxEx(title, str, width: MessageBoxEx.DefaultWidthMedium, justify: false)
-      {
-        DoShownSound = false,
-        ShowInTaskbar = true
-      };
+      form = new MessageBoxEx(title, str,
+                              width: MessageBoxEx.DefaultWidthMedium,
+                              justify: false,
+                              sound: false,
+                              showInTaskBar: true);
       if ( !Globals.MainForm.Visible || Globals.MainForm.WindowState == FormWindowState.Minimized )
         form.StartPosition = FormStartPosition.CenterScreen;
       form.ActionOK.Text = SysTranslations.ActionClose.GetLang();

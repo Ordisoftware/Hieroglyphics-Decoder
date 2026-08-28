@@ -1,6 +1,6 @@
 ﻿/// <license>
 /// This file is part of Ordisoftware Core Library.
-/// Copyright 2004-2025 Olivier Rogier.
+/// Copyright 2004-2026 Olivier Rogier.
 /// See www.ordisoftware.com for more information.
 /// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
 /// If a copy of the MPL was not distributed with this file, You can obtain one at
@@ -11,7 +11,7 @@
 /// You may add additional accurate notices of copyright ownership.
 /// </license>
 /// <created> 2016-04 </created>
-/// <edited> 2022-05 </edited>
+/// <edited> 2026-04 </edited>
 namespace Ordisoftware.Core;
 
 /// <summary>
@@ -49,6 +49,12 @@ static public partial class SysTranslations
   {
     [Language.EN] = "Term \"{0}\" not found.",
     [Language.FR] = "Terme \"{0}\" non trouvé."
+  };
+
+  static public readonly TranslationsDictionary AskToOverwriteDefaultFiles = new()
+  {
+    [Language.EN] = $"Overwrite default files?",
+    [Language.FR] = $"Remplacer les fichiers par défaut ?",
   };
 
   static public readonly TranslationsDictionary AskToDeleteFile = new()

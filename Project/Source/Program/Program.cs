@@ -1,6 +1,6 @@
 ﻿/// <license>
 /// This file is part of Ordisoftware Hieroglyphics Decoder.
-/// Copyright 2021-2025 Olivier Rogier.
+/// Copyright 2021-2026 Olivier Rogier.
 /// See www.ordisoftware.com for more information.
 /// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
 /// If a copy of the MPL was not distributed with this file, You can obtain one at
@@ -14,14 +14,14 @@
 /// <edited> 2021-10 </edited>
 namespace Ordisoftware.Hieroglyphics.Decoder;
 
-using System.IO.Pipes;
-using System.Runtime.Serialization.Formatters.Binary;
-
 /// <summary>
 /// Provides Program class.
 /// </summary>
 static partial class Program
 {
+
+  private const string SoftpediaURL = "";
+  private const string AlternativeToURL = "";
 
   /// <summary>
   /// Indicates the default Settings instance.
@@ -38,8 +38,8 @@ static partial class Program
     try
     {
       Globals.ChronoStartingApp.Start();
-      Globals.SoftpediaURL = "";
-      Globals.AlternativeToURL = "";
+      Globals.SoftpediaURL = SoftpediaURL;
+      Globals.AlternativeToURL = AlternativeToURL;
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
       /*

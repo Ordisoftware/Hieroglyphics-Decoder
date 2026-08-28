@@ -1,6 +1,6 @@
 ﻿/// <license>
 /// This file is part of Ordisoftware Core Library.
-/// Copyright 2004-2025 Olivier Rogier.
+/// Copyright 2004-2026 Olivier Rogier.
 /// See www.ordisoftware.com for more information.
 /// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
 /// If a copy of the MPL was not distributed with this file, You can obtain one at
@@ -11,7 +11,7 @@
 /// You may add additional accurate notices of copyright ownership.
 /// </license>
 /// <created> 2020-08 </created>
-/// <edited> 2022-06 </edited>
+/// <edited> 2026-07 </edited>
 namespace Ordisoftware.Core;
 
 public sealed partial class MessageBoxEx : Form
@@ -91,7 +91,9 @@ public sealed partial class MessageBoxEx : Form
                       MessageBoxIcon icon = MessageBoxIcon.None,
                       int width = DefaultWidthSmall,
                       bool justify = DefaultJustifyEnabled,
-                      bool sound = true)
+                      bool sound = true,
+                      bool showInTaskBar = false,
+                      bool topMost = false)
   : this()
   {
     Text = title;
@@ -131,6 +133,8 @@ public sealed partial class MessageBoxEx : Form
     Instances.Add(this);
     IconStyle = icon;
     DoShownSound = sound;
+    ShowInTaskbar = showInTaskBar;
+    TopMost = topMost;
   }
 
   public MessageBoxEx(TranslationsDictionary title,
@@ -139,8 +143,10 @@ public sealed partial class MessageBoxEx : Form
                       MessageBoxIcon icon = MessageBoxIcon.None,
                       int width = DefaultWidthSmall,
                       bool justify = DefaultJustifyEnabled,
-                      bool sound = true)
-  : this(title.GetLang(), text.GetLang(), buttons, icon, width, justify, sound)
+                      bool sound = true,
+                      bool showInTaskBar = false,
+                      bool topMost = false)
+  : this(title.GetLang(), text.GetLang(), buttons, icon, width, justify, sound, showInTaskBar, topMost)
   {
     LocalizedTitle = title;
     LocalizedText = text;

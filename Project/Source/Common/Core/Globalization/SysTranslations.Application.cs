@@ -1,6 +1,6 @@
 ﻿/// <license>
 /// This file is part of Ordisoftware Core Library.
-/// Copyright 2004-2025 Olivier Rogier.
+/// Copyright 2004-2026 Olivier Rogier.
 /// See www.ordisoftware.com for more information.
 /// This Source Code Form is subject to the terms of the Mozilla Public License, v. 2.0.
 /// If a copy of the MPL was not distributed with this file, You can obtain one at
@@ -11,7 +11,7 @@
 /// You may add additional accurate notices of copyright ownership.
 /// </license>
 /// <created> 2016-04 </created>
-/// <edited> 2023-07 </edited>
+/// <edited> 2024-01 </edited>
 namespace Ordisoftware.Core;
 
 /// <summary>
@@ -133,6 +133,15 @@ static public partial class SysTranslations
   {
     [Language.EN] = "Can't exit application while processing data.",
     [Language.FR] = "Impossible de quitter l'application durant le traitement des données."
+  };
+
+  static public readonly TranslationsDictionary AskToTerminateWhileProcessing = new()
+  {
+    [Language.EN] = "The application is processing data." + Globals.NL2 +
+                    "Do you want to finish and exit?",
+
+    [Language.FR] = "L'application traite des données." + Globals.NL2 +
+                    "Voulez-vous terminer et quitter ?"
   };
 
   static public readonly TranslationsDictionary AskToShutdownComputer = new()
